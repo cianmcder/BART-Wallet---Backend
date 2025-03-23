@@ -1,0 +1,49 @@
+{
+	"?xml":
+	{
+		"@version":"1.0","@encoding":"utf-8"
+	},
+	"root":
+	{
+		"uri":
+		{
+			"#cdata-section":"http://api.bart.gov/api/sched.aspx?cmd=fare&orig=12th&dest=embr&date=today&json=y"
+		},
+		"origin":"12TH",
+		"destination":"EMBR",
+		"trip":
+		{
+			"fare":"3.85",
+			"discount":
+			{
+				"clipper":"1.40"
+			}
+		},
+		"fares":
+		{
+			"@level":"normal",
+			"fare":
+			[{
+				"@amount":"3.85",
+				"@class":"clipper",
+				"@name":"Clipper"
+			},
+			{
+				"@amount":"3.05",
+				"@class":"start",
+				"@name":"Clipper START"
+			},
+			{
+				"@amount":"1.40",
+				"@class":"rtcclipper",
+				"@name":"Senior/Disabled Clipper"
+			},
+			{
+				"@amount":"1.90",
+				"@class":"student",
+				"@name":"Youth Clipper"
+			}]
+		},
+		"message":""
+	}
+}
