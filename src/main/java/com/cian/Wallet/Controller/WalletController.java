@@ -157,7 +157,7 @@ public class WalletController
 		{
 			w.payTicket(fare);
 			repo.save(w);
-			Ticket t = new Ticket(origin, destination);
+			Ticket t = new Ticket(origin, destination, id);
 			return t;
 		}
 	}
